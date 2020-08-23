@@ -1,0 +1,7 @@
+﻿<h3>Employees:</h3>
+<ul>
+    <li *ngFor="let user of allEmployees">
+      {{user.firstName}} {{user.lastName}} ({{user.designation}})
+        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+    </li>
+</ul>
